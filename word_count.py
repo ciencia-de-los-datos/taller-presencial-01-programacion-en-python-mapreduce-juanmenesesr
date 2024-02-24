@@ -52,6 +52,7 @@ def mapper(sequence):
         for word in words:
             word= word.replace(",", "")
             word= word.replace(".", "")
+            word = word.lower()
             tupla=(word,1)
             new_sequence.append(tupla )
     return  new_sequence
